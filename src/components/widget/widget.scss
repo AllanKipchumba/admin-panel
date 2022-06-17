@@ -1,6 +1,54 @@
 .widget {
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    // padding: 10px;
+    flex: auto;
+    padding: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    height: 100px;
+    //
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        //
+        span:nth-child(1) {
+            font-weight: bold;
+            font-size: 14px;
+            color: rgb(160, 160, 160);
+            text-transform: uppercase;
+        }
+        span:nth-child(2) {
+            font-size: 28px;
+            font-weight: 300;
+        }
+        span:nth-child(3) {
+            font-size: 12px;
+            border-bottom: 1px solid grey;
+            cursor: pointer;
+            text-transform: capitalize;
+            width: max-content;
+        }
+    }
+    .right {
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            //
+            &.positive {
+                color: #00b900;
+            }
+            &.negative {
+                color: #ff66ff;
+            }
+        }
+        .icon {
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+            color: #00b900;
+        }
+    }
 }
