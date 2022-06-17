@@ -7,14 +7,15 @@ import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlin
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
+import image from "./images/avatar.svg";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <>
       <div className="navbar">
         <div className="wrapper">
           <div className="search">
-            <input type="text" palceholder="Search..." />
+            <input type="text" placeholder="Search..." />
             <SearchOutlinedIcon />
           </div>
           <div className="items">
@@ -37,6 +38,9 @@ const navbar = () => {
             <div>
               <ListOutlinedIcon />
             </div>
+            {/* <div>
+              <img src={image} alt="useraAvatar" className="avatar" />
+            </div> */}
           </div>
         </div>
       </div>
@@ -44,4 +48,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

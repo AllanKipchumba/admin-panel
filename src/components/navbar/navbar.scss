@@ -14,11 +14,26 @@
         justify-content: space-between;
         //
         .search {
-            background-color: red;
-        }
-        //
-        .items {
             display: flex;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            padding: 3px;
+            //
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                //
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
         }
+    }
+    .items {
+        display: flex;
+        align-items: center;
+        //
+        div {}
     }
 }
