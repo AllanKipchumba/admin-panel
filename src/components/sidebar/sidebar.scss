@@ -1,3 +1,5 @@
+$admin-color: #6439ff;
+$complementary: #7451f8;
 .sidebar {
     flex: 1;
     border-right: 0.5px solid rgb(230, 227, 227);
@@ -11,7 +13,7 @@
         h1 {
             font-size: 20px;
             font-weight: bold;
-            color: #6439ff;
+            color: $admin-color;
             text-align: center;
             text-transform: capitalize;
             margin-top: 5px;
@@ -43,7 +45,7 @@
                     background-color: #ece8ff;
                 }
                  :first-child {
-                    color: #7451f8;
+                    color: $complementary;
                     font-size: 18px;
                 }
                  :nth-child(2) {
@@ -63,7 +65,7 @@
             height: 20px;
             margin: 5px;
             cursor: pointer;
-            border: 1px solid #7451f8;
+            border: 1px solid $complementary;
             border-radius: 5px;
             //
             &:first-child {
